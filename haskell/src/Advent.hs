@@ -28,13 +28,13 @@ digit = satisfy isDigit
 -- Plus sign
 posSign :: ReadP Integer
 posSign = do
-    sigil <- satisfy (== '+')
+    _ <- satisfy (== '+')
     return 1
 
 --  Minus sign
 negSign :: ReadP Integer
 negSign = do
-    sigil <- satisfy (== '-')
+    _ <- satisfy (== '-')
     return (-1)
 
 -- Mandatory sign followed by an integer
