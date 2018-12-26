@@ -19,13 +19,13 @@ findFirstRepeat :: String -> Maybe Integer
 findFirstRepeat = firstRepeat . freqs
 
 unit_ex1 :: IO ()
-unit_ex1 = assertEqual "ex1" (findFirstRepeat ex1) (Just 0)
+unit_ex1 = assertEqual "ex1" (Just 0) (findFirstRepeat ex1) 
 
 unit_ex2 :: IO ()
-unit_ex2 = assertEqual "ex2" (findFirstRepeat ex2) (Just 10)
+unit_ex2 = assertEqual "ex2" (Just 10) (findFirstRepeat ex2) 
 
 unit_ex3 :: IO ()
-unit_ex3 = assertEqual "ex3" (findFirstRepeat ex3) (Just 5)
+unit_ex3 = assertEqual "ex3" (Just 5) (findFirstRepeat ex3)
 
 unit_ex4 :: IO ()
-unit_ex4 = assertEqual "ex4" (findFirstRepeat ex4) (Just 14)
+unit_ex4 = assertEqual "ex4" (Just 14) (findFirstRepeat ex4) 
