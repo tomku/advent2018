@@ -5,7 +5,7 @@ import           Data.List                      ( find )
 import           Advent
 
 input :: IO String
-input = readData "day01_part01.txt"
+input = readData "day01.txt"
 
 parseLines :: ReadP [Integer]
 parseLines = delta `sepBy` char '\n'
